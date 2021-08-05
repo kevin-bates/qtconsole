@@ -34,7 +34,7 @@ jobs:
         run: |
           conda env update --file requirements/environment.yml
           pip install https://github.com/jupyter/jupyter_client/archive/master.zip --force-reinstall
-          pip install --upgrade pywin32==228
+          pip install --upgrade pywin32
       - name: Show environment information
         shell: bash -l {0}
         run: |
